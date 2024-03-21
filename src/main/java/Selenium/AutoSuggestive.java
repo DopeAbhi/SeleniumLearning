@@ -15,14 +15,12 @@ public class AutoSuggestive {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         driver.findElement(By.id("autosuggest")).sendKeys("i");
         Thread.sleep(2000);
-       List<WebElement> options=driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
+        List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
 
-       for(WebElement option : options)
-       {
-           if(option.getText().equalsIgnoreCase("india"))
-           {
-               option.click();
-           }
-       }
+        for (WebElement option : options) {
+            if (option.getText().equalsIgnoreCase("india")) {
+                option.click();
+            }
+        }
     }
 }
