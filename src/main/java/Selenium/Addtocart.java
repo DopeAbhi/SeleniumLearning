@@ -29,6 +29,8 @@ public class Addtocart {
         driver.findElement(By.className("promoCode")).sendKeys("rahulshettyacademy");
 
         driver.findElement(By.className("promoBtn")).click();
+
+        //Explicit Wait
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("promoInfo")));
         System.out.println(driver.findElement(By.className("promoInfo")).getText());
 
