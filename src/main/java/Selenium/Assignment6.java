@@ -21,6 +21,11 @@ public class Assignment6 {
         String dropdownvalue=checkboxText.toLowerCase();
       Select dropdown=new Select(element);
       dropdown.selectByValue(dropdownvalue);
+      driver.findElement(By.id("name")).sendKeys(checkboxText);
+      driver.findElement(By.id("alertbtn")).click();
+     String alertText= driver.switchTo().alert().getText();
+        System.out.println(alertText);
+
       Thread.sleep(3000);
       driver.quit();
 
