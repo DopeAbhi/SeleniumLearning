@@ -17,6 +17,8 @@ public class Windowhandle  {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://rahulshettyacademy.com/loginpagePractise/");
         driver.findElement(By.cssSelector(".blinkingText")).click();
+
+
         //Window Switch
 
        Set<String> windows= driver.getWindowHandles();
