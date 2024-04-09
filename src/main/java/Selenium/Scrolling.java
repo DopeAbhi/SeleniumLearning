@@ -17,9 +17,9 @@ public class Scrolling {
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         JavascriptExecutor js=(JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,500)"); //Scrolling Web Page
+        js.executeScript("window.scrollBy(0,500)"); //Scrolling Whole Page
         Thread.sleep(2000);
-        js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000"); //Scrolling Web Page .table is css
+        js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000"); //Scrolling table or view Page .table is css
        List<WebElement> element= driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)")); //Selecting columnE
        int sum=0;
        for (int i = 0; i <element.size() ; i++)
