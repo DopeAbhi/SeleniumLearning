@@ -28,6 +28,7 @@ public class Assignment8 {
                options.get(i).click();
            }
        }
+        System.out.println( driver.findElement(By.id("autocomplete")).getAttribute("value"));
         Thread.sleep(2000);
         driver.quit();
 
