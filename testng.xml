@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/abhayverma/IdeaProjects/SeleniumLearning">
+        <classes>
+            <class name="TestNG.Day1"/>
+            <class name="TestNG.Day2"/>
+        </classes>
+    </test>
+    <!--Run Test Case Under Particular Category or moudlarize the testcases based up on functionality and triggers-->
+<test name="Home Loan">
+    <classes>
+        <class name="TestNG.Day3">
+            <methods>
+                <exclude name="HomeLoan"/>
+                <exclude name="HomeLoan.*"/>  <!--This will exclude all the test case which hava HomeLoan in staring-->
+                <include name="PersonalLoan"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+
+
+
+</suite>
