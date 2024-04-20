@@ -1,31 +1,35 @@
 package TestNG;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Day3 {
-
+@Parameters({"testUrl"})
     @Test
-    public  void HomeLoan()
+    public  void HomeLoan(String URL)
     {
         System.out.println("HomeLoan");
+        System.out.println(URL);
     }
     @Test
     public  void HomeLoanDouble()
     {
         System.out.println("HomeLoanTriple");
     }
-    @Test
+    @Test(groups = {"Smoke"})
     public  void HomeLoanTriple()
     {
         System.out.println("HomeLoanDouble");
     }
+
     @Test
     public void CarLoan()
     {
         System.out.println("CarLoan");
     }
 
-    @Test
+
+    @Test(groups = {"Smoke"})
     public void PersonalLoan()
     {
         System.out.println("PersonalLoan");

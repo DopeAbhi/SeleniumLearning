@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/abhayverma/IdeaProjects/SeleniumLearning">
+    <test verbose="2" preserve-order="true" name="Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.Day1"/>
+            <class name="TestNG.Day2"/>
+            <class name="TestNG.Day3"/>
+            <class name="TestNG.Day4"/>
+
+
+        </classes>
 
     </test>
     

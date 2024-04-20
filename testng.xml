@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <parameter name="testUrl" value="Google.com"/>
     <test verbose="2" preserve-order="true" name="/Users/abhayverma/IdeaProjects/SeleniumLearning">
+        <parameter name="testUrl" value="Yahoo.com"/>
         <classes>
-            <class name="TestNG.Day1"/>
+            <class name="TestNG.Day1"><parameter name="testUrl" value="Gaming.com"/></class>
             <class name="TestNG.Day2"/>
             <class name="TestNG.Day4"/>
         </classes>
