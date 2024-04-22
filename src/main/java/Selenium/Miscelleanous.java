@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
-import java.io.IOException;  //For Taking screenshot you have to manually import appache common io
+import java.io.IOException;
 
 public class Miscelleanous {
 

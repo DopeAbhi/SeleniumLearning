@@ -56,7 +56,7 @@ if (price.size()<1)
 
       driver.quit();
     }
-
+//Create Custom Method
     private static String getveggiePrice(WebElement s) {
 //      String price = s.findElement(By.xpath("//tr/td[1]/following-sibling::td[1]")).getText();
    String price= s.findElement(By.xpath("following-sibling::td[1]")).getText();

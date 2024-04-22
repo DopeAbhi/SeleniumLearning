@@ -32,6 +32,7 @@ public class Day3 {
     @Test(groups = {"Smoke"})
     public void PersonalLoan()
     {
+//        Assert.assertTrue(false);
         System.out.println("PersonalLoan");
     }
 }
