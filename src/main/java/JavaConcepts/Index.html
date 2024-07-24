@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Verma - Software Tester</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header nav ul li {
+            float: left;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #35424a;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Abhay Verma</h1>
+            <h2>Software Tester</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container">
+        <h1>Welcome to My Personal Page</h1>
+        <p>Your partner in quality assurance and software testing.</p>
+    </div>
+</section>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I'm Abhay Verma, a professional Software Tester with a passion for ensuring the highest quality in software products. With a keen eye for detail and a systematic approach, I have successfully contributed to the development and release of numerous high-quality applications. I thrive in dynamic environments and love tackling new challenges in the realm of software testing.</p>
+</section>
+
+<section id="portfolio" class="container hidden">
+    <h2>Portfolio</h2>
+    <p>Here are some of the projects I have worked on:</p>
+    <ul>
+        <li>Project 1: Description of the first project.</li>
+        <li>Project 2: Description of the second project.</li>
+        <li>Project 3: Description of the third project.</li>
+    </ul>
+</section>
+
+<section id="contact" class="container hidden">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me through the following channels:</p>
+    <ul>
+        <li>Email: <a href="mailto:abhay.verma@example.com">abhay.verma@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/abhay-verma" target="_blank">linkedin.com/in/abhay-verma</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>Abhay Verma &copy; 2024</p>
+</footer>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            const sections = document.querySelectorAll('section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    sections.forEach(section => {
+                        section.classList.add('hidden');
+                    });
+                    document.getElementById(targetId).classList.remove('hidden');
+                });
+            });
+
+            // Show About Me section by default
+            document.getElementById('about').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

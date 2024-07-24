@@ -14,6 +14,7 @@ public class FilterWebTable {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+
 String text="Rice";
         driver.findElement(By.id("search-field")).sendKeys(text);
         List<WebElement> list= driver.findElements(By.xpath("//tr/td[1]"));

@@ -15,7 +15,7 @@ public class Actionsdemo {
         driver.get("https://www.amazon.in/");
         Actions actions=new Actions(driver);
         WebElement elment=driver.findElement(By.cssSelector("[id='nav-link-accountList']"));
-    actions.moveToElement(elment).build().perform();
+    actions.moveToElement(elment).build().perform();  //Hover Mouse Over Particular Element
     Thread.sleep(2000);
     //Keyboard Keys Use wit action methods
         actions.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("abhay").doubleClick().build().perform();
